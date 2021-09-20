@@ -1,5 +1,16 @@
+import styled from "styled-components";
+import Home from "./Pages/Home";
+
+const Container = styled.div`
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+`
+
 const App = () => {
-  return <div>Hello world!</div>;
+  return <Container>
+    <Home/>
+  </Container>;
 };
 
 export default App;
