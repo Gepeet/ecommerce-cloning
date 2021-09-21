@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Home from "./Pages/Home";
+import './App.css';
 
 const Container = styled.div`
   margin: 0;

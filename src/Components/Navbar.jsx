@@ -4,8 +4,8 @@ import styled from 'styled-components'
 const Container = styled.div`
     width: 100vw;
     height: 60px;
-    background-color:black;
-    color: white;
+    background-color:white;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,7 +15,7 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 100%;
     padding: 10px 20px;
     display: flex;
