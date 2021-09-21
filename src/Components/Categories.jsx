@@ -17,6 +17,7 @@ const Categories = () => {
         <Container>
             {CategoriesData.map(data=>(
             <CategoryItem
+            key={data.id}
             data={data}/>
             ))}
         </Container>
