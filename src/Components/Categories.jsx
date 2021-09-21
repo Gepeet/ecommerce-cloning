@@ -5,17 +5,19 @@ import { CategoriesData } from '../Dummy Data/CategoriesData';
 
 const Container = styled.div`
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70vh;
 `
 
 
 const Categories = () => {
     return (
         <Container>
-            {CategoriesData.map((data)=>(
+            {CategoriesData.map(data=>(
             <CategoryItem
-            id={data.id}
-            title={data.title}
-            img={data.img}/>
+            data={data}/>
             ))}
         </Container>
     )
