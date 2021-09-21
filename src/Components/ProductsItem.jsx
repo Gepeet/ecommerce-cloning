@@ -1,12 +1,31 @@
 import React from 'react'
 import styled from 'styled-components';
 
+const Info = styled.div`
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: #80ff0094;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .5s ease ;
+`
+
 const Container = styled.div`
     /* flex: 1; */
     width: 500px;
     height: 30vh;
     margin: 10px;
     position: relative;
+
+    &:hover ${Info}{
+        opacity: 1;
+    }
 `
 
 const Image = styled.img`
@@ -15,19 +34,7 @@ const Image = styled.img`
     object-fit: cover;
 `
 
-const Info = styled.div`
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    
-    width: 100%;
-    height: 100%;
-    background: #80ff004c;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`
+
 
 const Title = styled.h3`
     color: white;

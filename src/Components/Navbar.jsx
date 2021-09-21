@@ -97,7 +97,7 @@ const Navbar = () => {
                     <MenuItem>
                         <Badge badgeContent={4} color="primary">
                             <ShoppingBagOutlined/>    
-                        </Badge>;
+                        </Badge>
                     </MenuItem>
                 </Right>
             </Wrapper>
