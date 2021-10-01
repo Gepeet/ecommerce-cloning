@@ -8,14 +8,9 @@ import { ShoppingBagOutlined } from '@mui/icons-material';
 const Container = styled.div`
     overflow: hidden;
     width: 100%;
-    /* height: 60px; */
     background-color:white;
     color: black;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center;
-    align-items: center; */
-    /* padding: 0 50px; */
+   
 
 `
 
