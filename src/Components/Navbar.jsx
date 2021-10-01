@@ -49,7 +49,7 @@ const Input = styled.input`
     padding: 5px 5px;
 `
 const Center = styled.div`
-    flex: 1;
+    flex: 4;
     text-align: center;
 `
 
