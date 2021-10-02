@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Pinterest, Twitter } from '@mui/icons-material'
+import { Email, Facebook, Instagram, Phone, Pinterest, Room, Twitter } from '@mui/icons-material'
 import React from 'react'
 import styled from "styled-components"
 
@@ -24,6 +24,7 @@ width: 100%;
 justify-content:center;
 `
 const SocialIcon = styled.div`
+cursor: pointer;
 width: 40px;
 height: 40px;
 border-radius: 50%;
@@ -37,21 +38,51 @@ margin:20px 10px;
 
 const Center = styled.div`
 flex: 1;
+padding:10px 30px;
 `
 
 const Title = styled.h3`
+font-size: 25px;
+margin-bottom: 20px;
 `
 
 const List = styled.ul`
+width: 100%;
+align-items: baseline;
+max-height: 250px;
+flex-wrap: wrap;
+list-style: none;
+display: flex;
+flex-direction: column;
 `
 
-const ListItem = styled.li``
+const ListItem = styled.li`
+margin: 10px 0;
+cursor: pointer;
+`
 
 const Right = styled.div`
 flex: 1;
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+align-items: flex-start;
+padding:10px 30px;
 `
 
+const ContactItem = styled.div`
+margin: 10px 0;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+width: 100%;
+/* background-color: firebrick; */
+`
 
+const Payment = styled.img`
+width: 50%;
+margin-top: 10px;
+`
 
 const Footer = () => {
     return (
@@ -91,7 +122,13 @@ const Footer = () => {
                 </List>
 
             </Center>
-            <Right></Right>
+            <Right>
+                <Title>Contact</Title>
+                <ContactItem><Room style={{marginRight:'10px'}}/>Unit 7 Aprtment, JP Rizal San Juan City</ContactItem>
+                <ContactItem><Phone style={{marginRight:'10px'}}/>0906-006-5955</ContactItem>
+                <ContactItem><Email style={{marginRight:'10px'}}/>venecom@email.com</ContactItem>
+                <Payment src="https://t4.ftcdn.net/jpg/04/16/93/07/360_F_416930739_UeumuMO5QhZOXIAc09s7gz6JSPT97duS.jpg"/>
+            </Right>
         </Container>
     )
 }

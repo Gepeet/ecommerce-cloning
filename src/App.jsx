@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import Home from "./Pages/Home";
 import './App.css';
+import ProductList from "./Pages/ProductList";
+import Product from "./Pages/Product";
+import Registration from "./Pages/Registration";
+import Login from "./Pages/Login";
+import Cart from "./Pages/Cart";
+
+
 
 const Container = styled.div`
   
@@ -11,7 +18,7 @@ const Container = styled.div`
 
 const App = () => {
   return <Container>
-    <Home/>
+    <Cart/>
   </Container>;
 };
 
