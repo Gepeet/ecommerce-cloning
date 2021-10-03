@@ -4,14 +4,15 @@ import styled from 'styled-components';
 import Search from '@mui/icons-material/Search';
 import Badge from '@mui/material/Badge';
 import { ShoppingBagOutlined } from '@mui/icons-material';
+import { mobile } from '../Responsive';
 
 const Container = styled.div`
-    overflow: hidden;
-    width: 100%;
+    /* overflow: hidden; */
+    /* width: 100%; */
     background-color:white;
     color: black;
-   
-
+  
+    
 `
 
 const Wrapper = styled.div`
@@ -21,16 +22,22 @@ const Wrapper = styled.div`
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
+    ${mobile({flexDirection:"column"})}
 `
 
 const Left = styled.div`
     flex: 1;
     display: flex;
     align-items: center;
+    ${mobile({
+        flex:"1",
+        alignSelf:"center"
+        })}
 `
 
 const Language = styled.span`
-
+    cursor: pointer;
+    /* ${mobile({display:"none"})} */
 `
 
 const SearchContainer = styled.div`
@@ -41,12 +48,14 @@ const SearchContainer = styled.div`
     background-color: white;
     border-radius: 5px;
     padding: 2px 2px;
+   
 `
 
 const Input = styled.input`
     border: none;
     outline: none;
     padding: 5px 5px;
+    
 `
 const Center = styled.div`
     flex: 4;
@@ -63,11 +72,13 @@ const Right = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    ${mobile({fontSize:"24px"})}
 `
 
 const MenuItem = styled.div`
     font-size: 14px;
     cursor: pointer;
+    ${mobile({fontSize:"12", marginLeft:"10px"})}
 `
 
 const Navbar = () => {

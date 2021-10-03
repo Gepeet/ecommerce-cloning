@@ -19,7 +19,7 @@ const Info = styled.div`
 const Container = styled.div`
     /* flex: 1; */
     width: 500px;
-    height: 30vh;
+    /* height: 30vh; */
     margin: 10px;
     position: relative;
 

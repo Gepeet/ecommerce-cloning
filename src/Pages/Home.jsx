@@ -9,7 +9,8 @@ import Products from '../Components/Products'
 import Slider from '../Components/Slider'
 
 const Container = styled.div`
- 
+ /* width: 20%; */
+ overflow: hidden;
 `
 
 const Home = () => {

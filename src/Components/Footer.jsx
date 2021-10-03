@@ -1,19 +1,24 @@
 import { Email, Facebook, Instagram, Phone, Pinterest, Room, Twitter } from '@mui/icons-material'
 import React from 'react'
 import styled from "styled-components"
+import { mobile } from '../Responsive'
 
 const Container = styled.div`
+width: 100vw;
 display: flex;
 background-color: white;
+${mobile({flexDirection:"column", overflow:"hidden"})}
 `
 const Left = styled.div`
 padding:10px 30px;
 flex: 1;
+${mobile({flex:"unset",padding:"10px 10px", width:"100vw"})}
 `
 const Logo = styled.h1``
 
 const Desc = styled.p`
 margin: 20px 0;
+padding: 10px;
 
 `
 
@@ -39,6 +44,7 @@ margin:20px 10px;
 const Center = styled.div`
 flex: 1;
 padding:10px 30px;
+${mobile({flex:"unset",padding:"10px 10px", width:"100vw"})}
 `
 
 const Title = styled.h3`
@@ -48,17 +54,20 @@ margin-bottom: 20px;
 
 const List = styled.ul`
 width: 100%;
-align-items: baseline;
+/* align-items: left; */
 max-height: 250px;
 flex-wrap: wrap;
 list-style: none;
 display: flex;
 flex-direction: column;
+
 `
 
 const ListItem = styled.li`
 margin: 10px 0;
 cursor: pointer;
+padding: 0;
+/* list-style-position: inside; */
 `
 
 const Right = styled.div`
@@ -68,6 +77,7 @@ flex-direction: column;
 /* justify-content: center; */
 align-items: flex-start;
 padding:10px 30px;
+${mobile({flex:"unset",padding:"10px 10px", width:"100vw"})}
 `
 
 const ContactItem = styled.div`

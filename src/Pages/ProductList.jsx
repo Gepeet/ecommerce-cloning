@@ -5,9 +5,11 @@ import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import NewsLetter from '../Components/NewsLetter'
 import Products from '../Components/Products'
+import { mobile } from '../Responsive'
 
 const Container = styled.div`
-
+/* width: 100%; */
+/* background-color: lightgray; */
 `
 const Title = styled.h1`
 margin:20px;
@@ -15,10 +17,14 @@ margin:20px;
 const FilterContainer = styled.div`
 display: flex;
 justify-content: space-between;
+${mobile({flexDirection:"column"})}
 
 `
 const Filter = styled.div`
 margin: 20px;
+display: flex;
+align-items: center;
+${mobile({flexDirection:"column"})}
 `
 
 const FilterText = styled.span`
@@ -29,6 +35,7 @@ font-weight: 600;
 const Select = styled.select`
 padding: 5px;
 margin-left: 10px;
+${mobile({margin:"10px 0"})}
 `
 const Option = styled.option``
 const ProductList = () => {
